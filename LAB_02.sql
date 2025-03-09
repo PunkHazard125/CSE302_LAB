@@ -76,6 +76,12 @@ SELECT a.account_no, a.balance
 FROM account a
 JOIN depositor d on d.a_no = a.account_no
 JOIN customer c on c.customer_no = d.c_no
+WHERE c.customer_no = 'C-102';
+
+SELECT a.account_no, a.balance
+FROM account a
+JOIN depositor d on d.a_no = a.account_no
+JOIN customer c on c.customer_no = d.c_no
 WHERE c.customer_city IN ('Dhaka', 'Khulna');
 
 SELECT *
